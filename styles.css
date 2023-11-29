@@ -57,7 +57,7 @@ h1 {
 }
 
 .nav-link {
-    color: #fcfafa; /* Blanc cassé (almost white) text color */
+    color: #3498db; /* Blue hyperlink color */
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 20px;
@@ -65,7 +65,7 @@ h1 {
 }
 
 .nav-link:hover {
-    color: #ffcc00;
+    color: #2980b9; /* Darker blue on hover */
 }
 
 @font-face {
@@ -82,4 +82,21 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     color: #fcfafa; /* Blanc cassé (almost white) text color */
+}
+
+/* Styles for the "Notes sur la musique" page */
+#notesMusique {
+    /* Add specific styles for this page */
+}
+
+#notesMusique p {
+    color: #fcfafa; /* Blanc cassé (almost white) text color */
+}
+
+#notesMusique a.nav-link {
+    color: #3498db; /* Blue hyperlink color */
+}
+
+#notesMusique a.nav-link:hover {
+    color: #2980b9; /* Darker blue on hover */
 }
