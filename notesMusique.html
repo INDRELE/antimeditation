@@ -2,9 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <title>Notes sur la musique</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -31,23 +28,6 @@
         </div>
     </div>
 
-<script type="text/javascript">
-    // JavaScript for handling slide navigation
-    document.addEventListener('DOMContentLoaded', function () {
-        showSlide('slide1'); // Show the first slide initially
-    });
-
-    function showSlide(slideId) {
-        console.log('Selected Slide ID:', slideId); // Log the selected slide ID
-
-        const slides = document.querySelectorAll('.slide');
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-        });
-
-        const selectedSlide = document.getElementById(slideId);
-        if (selectedSlide) {
-            selectedSlide.style.display = 'block';
-        }
-    }
-</script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
