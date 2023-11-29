@@ -1,0 +1,24 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'twothousandtwentytwo', sans-serif;
+    background-color: #111; /* Dark background color */
+    color: #fcfafa; /* Blanc cassé (almost white) text color */
+}
+
+.nav-link {
+    font-family: 'twothousandtwentytwo', sans-serif;
+    color: #fcfafa; /* Blanc cassé (almost white) text color */
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Add any other common styles here */
