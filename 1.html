@@ -1,94 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>1.html</title>
-    <style type="text/css" media="screen"><!--
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'twothousandtwentytwo', sans-serif;
-            background-color: #111; /* Dark background color */
-            color: #fcfafa; /* Blanc cassé (almost white) text color */
-        }
-        .presentation {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .slide {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-        }
-        .background-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            object-fit: cover;
-            filter: brightness(50%); /* Adjust brightness of the background image */
-        }
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1 {
-            font-size: 4em; /* Increase font size for the title */
-            margin-bottom: 20px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .nav-link {
-            color: #fcfafa; /* Blanc cassé (almost white) text color */
-            text-decoration: none;
-            font-size: 1.5em;
-            margin: 0 20px;
-            transition: color 0.3s;
-        }
-        .nav-link:hover {
-            color: #ffcc00;
-        }
-
-        @font-face {
-            font-family: 'twothousandtwentytwo';
-            src: url('https://raw.githubusercontent.com/INDRELE/antimeditationoo1/main/twothousandtwentytwo.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        /* Message at the bottom of each slide */
-        .refresh-message {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #fcfafa; /* Blanc cassé (almost white) text color */
-        }
-    --></style>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Anti Méditation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
     <div class="presentation">
-        <!-- Slide 1: Opening Slide -->
         <div id="slide1" class="slide">
-            <img class="background-image" src="https://github.com/INDRELE/antimeditationoo1/raw/main/Sequence%2001_1.gif" alt="Image de fond"/>
+            <img class="background-image" src="https://github.com/INDRELE/antimeditationoo1/raw/main/Sequence%2001_1.gif" alt="Background Image" />
             <div class="centered">
                 <h1>ANTI MÉDITATION</h1>
-                <p style="font-size: 1.5em;">Explorez l'art de la révolte et de la confusion.</p>
+                <p>Explorez l'art de la révolte et de la confusion.</p>
             </div>
             <div class="nav-links">
                 <a class="nav-link" href="notesMusique.html">Notes sur la musique</a>
@@ -99,23 +22,6 @@
         </div>
     </div>
 
-<script type="text/javascript">
-    // JavaScript for handling slide navigation
-    document.addEventListener('DOMContentLoaded', function () {
-        showSlide('slide1'); // Show the first slide initially
-    });
-
-    function showSlide(slideId) {
-        console.log('Selected Slide ID:', slideId); // Log the selected slide ID
-
-        const slides = document.querySelectorAll('.slide');
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-        });
-
-        const selectedSlide = document.getElementById(slideId);
-        if (selectedSlide) {
-            selectedSlide.style.display = 'block';
-        }
-    }
-</script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
