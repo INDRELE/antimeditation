@@ -8,8 +8,55 @@ body {
     color: #fcfafa; /* Blanc cassé (almost white) text color */
 }
 
+.presentation {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(50%); /* Adjust brightness of the background image */
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 4em; /* Increase font size for the title */
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .nav-link {
-    font-family: 'twothousandtwentytwo', sans-serif;
     color: #fcfafa; /* Blanc cassé (almost white) text color */
     text-decoration: none;
     font-size: 1.5em;
@@ -21,4 +68,18 @@ body {
     color: #ffcc00;
 }
 
-/* Add any other common styles here */
+@font-face {
+    font-family: 'twothousandtwentytwo';
+    src: url('https://raw.githubusercontent.com/INDRELE/antimeditationoo1/main/twothousandtwentytwo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Message at the bottom of each slide */
+.refresh-message {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fcfafa; /* Blanc cassé (almost white) text color */
+}
