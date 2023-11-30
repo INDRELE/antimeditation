@@ -36,15 +36,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* Message at the top of each slide with smaller text */
+/* Message at the bottom of each slide */
 .refresh-message {
     position: fixed;
-    top: 10px; /* Adjusted to be at the top */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.8em; /* Adjusted font size to be smaller */
     color: #fcfafa; /* Blanc cassé (almost white) text color */
-    z-index: -1; /* Set z-index to be lower than the other elements */
+    z-index: 1; /* Set z-index to be lower than the other elements */
 }
 
 h1, h2, p {
@@ -55,9 +54,10 @@ h1, h2, p {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 40px; /* Adjusted top spacing */
+    bottom: 10px; /* Adjusted to prevent overlapping with the refresh message */
     left: 0;
     right: 0;
+    z-index: 2; /* Adjusted z-index value */
 }
 
 .nav-link {
@@ -67,7 +67,7 @@ h1, h2, p {
     margin: 0 20px;
     transition: color 0.3s;
     position: relative; /* Add position relative */
-    z-index: 1; /* Add z-index to ensure it's above the refresh message */
+    z-index: 3; /* Adjusted z-index value */
 }
 
 .nav-link:hover {
@@ -107,3 +107,5 @@ h1, h2, p {
     color: #dda0dd; /* Warm violet text color */
     margin-top: 10px;
 }
+
+/* ... Remaining CSS ... */
