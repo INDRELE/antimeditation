@@ -12,12 +12,18 @@ body {
 
 .slide, .subpage {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
 .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -38,7 +44,7 @@ h1, h2, p {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 70%;
+    bottom: 10px; /* Adjusted to prevent overlapping with the refresh message */
     left: 0;
     right: 0;
 }
@@ -53,15 +59,6 @@ h1, h2, p {
 
 .nav-link:hover {
     color: #ffcc00;
-}
-
-.subpage {
-    display: none;
-}
-
-@font-face {
-    font-family: 'twothousandtwentytwo';
-    src: url('https://raw.githubusercontent.com/INDRELE/antimeditationoo1/main/twothousandtwentytwo.ttf') format('truetype');
 }
 
 /* Custom audio player styles */
