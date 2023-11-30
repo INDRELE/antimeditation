@@ -44,7 +44,7 @@ h1, h2, p {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 40px; /* Increased bottom spacing */
+    top: 40px; /* Adjusted top spacing */
     left: 0;
     right: 0;
 }
@@ -95,11 +95,12 @@ h1, h2, p {
     margin-top: 10px;
 }
 
-/* Message at the bottom of each slide */
+/* Message at the top of each slide with smaller text */
 .refresh-message {
     position: fixed;
-    bottom: 60px; /* Increased bottom spacing */
+    top: 10px; /* Adjusted to be at the top */
     left: 50%;
     transform: translateX(-50%);
+    font-size: 0.8em; /* Adjusted font size to be smaller */
     color: #fcfafa; /* Blanc cassé (almost white) text color */
 }
