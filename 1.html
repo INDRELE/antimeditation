@@ -2,21 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>1.html</title>
+    <title>15.html</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <style type="text/css" media="screen"><!--
         body {
             margin: 0;
             padding: 0;
             font-family: 'twothousandtwentytwo', sans-serif;
-            background-color: #111; /* Dark background color */
-            color: #fcfafa; /* Blanc cassé (almost white) text color */
         }
         .presentation {
             width: 100vw;
             height: 100vh;
             overflow: hidden;
         }
-        .slide {
+        .slide, .subpage {
             display: none;
             position: absolute;
             top: 0;
@@ -32,8 +31,6 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            object-fit: cover;
-            filter: brightness(50%); /* Adjust brightness of the background image */
         }
         .centered {
             position: absolute;
@@ -41,20 +38,19 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-        h1 {
-            font-size: 4em; /* Increase font size for the title */
-            margin-bottom: 20px;
+        h1, h2, p {
+            color: #dda0dd; /* Warm violet text color */
         }
         .nav-links {
             display: flex;
             justify-content: center;
             position: absolute;
-            bottom: 20px;
+            top: 70%;
             left: 50%;
             transform: translateX(-50%);
         }
         .nav-link {
-            color: #fcfafa; /* Blanc cassé (almost white) text color */
+            color: #dda0dd; /* Warm violet text color */
             text-decoration: none;
             font-size: 1.5em;
             margin: 0 20px;
@@ -64,9 +60,38 @@
             color: #ffcc00;
         }
 
-        @font-face {
-            font-family: 'twothousandtwentytwo';
-            src: url('https://raw.githubusercontent.com/INDRELE/antimeditationoo1/main/twothousandtwentytwo.ttf') format('truetype');
+        /* Custom audio player styles */
+        .audio-player {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .audio-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .audio-controls button {
+            background-color: #ffcc00;
+            color: #333;
+            font-size: 1em;
+            padding: 8px 15px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .audio-controls button:hover {
+            background-color: #ddd;
+        }
+
+        .audio-source {
+            color: #dda0dd; /* Warm violet text color */
+            margin-top: 10px;
         }
 
         /* Message at the bottom of each slide */
@@ -86,4 +111,144 @@
             <img class="background-image" src="https://github.com/INDRELE/antimeditationoo1/raw/main/Sequence%2001_1.gif" alt="Image de fond"/>
             <div class="centered">
                 <h1>ANTI MÉDITATION</h1>
-                <p style="font-siz
+            </div>
+            <div class="nav-links">
+                <a class="nav-link" href="#notesMusique">Notes sur la musique</a>
+                <a class="nav-link" href="#notesArchitecture">Notes sur l'architecture</a>
+                <a class="nav-link" href="#notesPeinture">Notes sur la peinture</a>
+                <a class="nav-link" href="#conclusion">Conclusion?</a>
+            </div>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Slide 2: Notes sur la musique -->
+        <div id="notesMusique" class="slide">
+            <p style="color: #fcfafa;">John Cage's "The Book of Changes".</p>
+            <!-- Background music (John Cage's "The Book of Changes") -->
+            <audio controls loop>
+                <source src="https://cdn.jsdelivr.net/gh/INDRELE/antimeditationoo1/Cage-music-of-changes-4-tudor.ogg.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Add content for "Notes sur la musique" -->
+            <h2>Notes sur la musique</h2>
+            <!-- Four hyperlinks for this slide -->
+            <div class="nav-links">
+                <a class="nav-link" href="#enfersPersonnels">Enfers personnels</a>
+                <a class="nav-link" href="#punkRock">Punk rock contre psychédélisme</a>
+                <a class="nav-link" href="#politiserTranse">Politiser la transe</a>
+                <a class="nav-link" href="#anacoluthe">Anacoluthe</a>
+            </div>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Slide 3: Notes sur l'architecture -->
+        <div id="notesArchitecture" class="slide">
+            <h2>Notes sur l'architecture</h2>
+            <p>Content goes here.</p>
+            <!-- Subpage 1: Rapports de pouvoir et l'architecture -->
+            <div class="nav-links">
+                <a class="nav-link" href="#rapportsPouvoirContent">Rapports de pouvoir et l'architecture</a>
+            </div>
+            <!-- Subpage 2: Illusion d'artefact -->
+            <div class="nav-links">
+                <a class="nav-link" href="#illusionArtefactContent">Illusion d'artefact</a>
+            </div>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Subpage 1: Rapports de pouvoir et l'architecture -->
+        <div id="rapportsPouvoirContent" class="subpage">
+            <h2>Rapports de pouvoir et l'architecture</h2>
+            <p>Content goes here.</p>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Subpage 2: Illusion d'artefact -->
+        <div id="illusionArtefactContent" class="subpage">
+            <h2>Illusion d'artefact</h2>
+            <p>Content goes here.</p>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+        
+        <!-- Slide 4: Notes sur la peinture -->
+        <div id="notesPeinture" class="slide">
+            <h2>Notes sur la peinture</h2>
+            <p>Content goes here.</p>
+            <!-- Subpage 1: Crisis in geometry -->
+            <div id="crisisGeometry" class="nav-links">
+                <a class="nav-link" href="#crisisGeometryContent">Crisis in geometry</a>
+            </div>
+            <!-- Subpage 2: Peinture et idiotie -->
+            <div id="peintureIdiotie" class="nav-links">
+                <a class="nav-link" href="#peintureIdiotieContent">Peinture et idiotie</a>
+            </div>
+            <!-- Subpage 3: DeChirico -->
+            <div id="deChirico" class="nav-links">
+                <a class="nav-link" href="#deChiricoContent">DeChirico</a>
+            </div>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Subpage 1: Crisis in geometry -->
+        <div id="crisisGeometryContent" class="subpage">
+            <h2>Crisis in geometry</h2>
+            <p>Content goes here.</p>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Subpage 2: Peinture et idiotie -->
+        <div id="peintureIdiotieContent" class="subpage">
+            <h2>Peinture et idiotie</h2>
+            <p>Content goes here.</p>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Subpage 3: DeChirico -->
+        <div id="deChiricoContent" class="subpage">
+            <h2>DeChirico</h2>
+            <p>Content goes here.</p>
+            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
+        </div>
+
+        <!-- Your existing content for other slides remains unchanged -->
+
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            showSlide('slide1');
+        });
+
+        function showSlide(slideId) {
+            const slides = document.querySelectorAll('.slide, .subpage');
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            const selectedSlide = document.getElementById(slideId);
+            if (selectedSlide) {
+                selectedSlide.style.display = 'block';
+                pauseOtherPlayers(selectedSlide);
+            }
+        }
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetSlideId = this.getAttribute('href').substring(1);
+                showSlide(targetSlideId);
+            });
+        });
+
+        function pauseOtherPlayers(currentSlide) {
+            const audioPlayers = document.querySelectorAll('.audio-player audio');
+            audioPlayers.forEach(player => {
+                if (player.parentNode.parentNode !== currentSlide) {
+                    player.pause();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
