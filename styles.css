@@ -101,6 +101,6 @@ h1, h2, p {
     top: 10px; /* Adjusted to be at the top */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.8em; /* Adjusted font size to be smaller */
+    font-size: 0.09em; /* Adjusted font size to be smaller */
     color: #fcfafa; /* Blanc cassé (almost white) text color */
 }
