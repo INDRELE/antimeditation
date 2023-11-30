@@ -34,7 +34,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}/* Message at the top of each slide with smaller text */
+.refresh-message {
+    position: fixed;
+    top: 10px; /* Adjusted to be at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em; /* Adjusted font size to be smaller */
+    color: #fcfafa; /* Blanc cassé (almost white) text color */
 }
+
 
 h1, h2, p {
     color: #dda0dd; /* Warm violet text color */
@@ -95,12 +105,3 @@ h1, h2, p {
     margin-top: 10px;
 }
 
-/* Message at the top of each slide with smaller text */
-.refresh-message {
-    position: fixed;
-    top: 10px; /* Adjusted to be at the top */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.8em; /* Adjusted font size to be smaller */
-    color: #fcfafa; /* Blanc cassé (almost white) text color */
-}
