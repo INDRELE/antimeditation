@@ -107,5 +107,9 @@ h1, h2, p {
     color: #dda0dd; /* Warm violet text color */
     margin-top: 10px;
 }
+/* Temporary styles for debugging */
+#notesArchitecture, #notesPeinture {
+    border: 2px solid red;
+}
 
 /* ... Remaining CSS ... */
