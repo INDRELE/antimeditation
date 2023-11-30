@@ -39,7 +39,7 @@ body {
 /* Message at the bottom of each slide */
 .refresh-message {
     position: fixed;
-    bottom: 300px;
+    bottom: 500px;
     left: 50%;
     transform: translateX(-50%);
     color: #fcfafa; /* Blanc cassé (almost white) text color */
