@@ -1,108 +1,114 @@
-<style type="text/css" media="screen"><!--
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'twothousandtwentytwo', sans-serif;
-    }
-    .presentation {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-    .slide, .subpage {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-    .background-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    h1, h2, p {
-        color: #dda0dd; /* Warm violet text color */
-    }
-    .nav-links {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 70%;
-        left: 0;
-        right: 0;
-    }
-    .nav-link {
-        color: #dda0dd; /* Warm violet text color */
-        text-decoration: none;
-        font-size: 1.5em;
-        margin: 0 20px;
-        transition: color 0.3s;
-    }
-    .nav-link:hover {
-        color: #ffcc00;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'twothousandtwentytwo', sans-serif;
+}
 
-    .subpage {
-        display: none;
-    }
+.presentation {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    @font-face {
-        font-family: 'twothousandtwentytwo';
-        src: url('https://raw.githubusercontent.com/INDRELE/antimeditationoo1/main/twothousandtwentytwo.ttf') format('truetype');
-    }
+.slide, .subpage {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
 
-    /* Custom audio player styles */
-    .audio-player {
-        display: none;
-        margin-top: 30px;
-    }
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
-    .audio-controls {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    .audio-controls button {
-        background-color: #ffcc00;
-        color: #333;
-        font-size: 1em;
-        padding: 8px 15px;
-        margin: 0 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+h1, h2, p {
+    color: #dda0dd; /* Warm violet text color */
+}
 
-    .audio-controls button:hover {
-        background-color: #ddd;
-    }
+.nav-links {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+}
 
-    .audio-source {
-        color: #dda0dd; /* Warm violet text color */
-        margin-top: 10px;
-    }
+.nav-link {
+    color: #dda0dd; /* Warm violet text color */
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
 
-    /* Message at the bottom of each slide */
-    .refresh-message {
-        position: fixed;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fcfafa; /* Blanc cassé (almost white) text color */
-    }
---></style>
+.nav-link:hover {
+    color: #ffcc00;
+}
+
+.subpage {
+    display: none;
+}
+
+@font-face {
+    font-family: 'twothousandtwentytwo';
+    src: url('https://raw.githubusercontent.com/INDRELE/antimeditationoo1/main/twothousandtwentytwo.ttf') format('truetype');
+}
+
+/* Custom audio player styles */
+.audio-player {
+    display: none;
+    margin-top: 30px;
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.audio-controls button {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1em;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.audio-controls button:hover {
+    background-color: #ddd;
+}
+
+.audio-source {
+    color: #dda0dd; /* Warm violet text color */
+    margin-top: 10px;
+}
+
+/* Message at the bottom of each slide */
+.refresh-message {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fcfafa; /* Blanc cassé (almost white) text color */
+}
