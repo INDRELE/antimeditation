@@ -24,23 +24,6 @@
         </div>
     </div>
 
-<script type="text/javascript">
-    // JavaScript for handling slide navigation
-    document.addEventListener('DOMContentLoaded', function () {
-        showSlide('slide1'); // Show the first slide initially
-    });
-
-    function showSlide(slideId) {
-        console.log('Selected Slide ID:', slideId); // Log the selected slide ID
-
-        const slides = document.querySelectorAll('.slide');
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-        });
-
-        const selectedSlide = document.getElementById(slideId);
-        if (selectedSlide) {
-            selectedSlide.style.display = 'block';
-        }
-    }
-</script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
