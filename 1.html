@@ -1,239 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>1.html</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style type="text/css" media="screen"><!--
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Méditation</title>
+    <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'twothousandtwentytwo', sans-serif;
-        }
-        .presentation {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .slide, .subpage {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-        }
-        .background-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1, h2, p {
-            color: #dda0dd; /* Warm violet text color */
         }
         .nav-links {
             display: flex;
             justify-content: center;
-            position: absolute;
-            bottom: 10px; /* Adjusted to prevent overlapping with the refresh message */
-            left: 0;
-            right: 0;
+            align-items: center;
+            height: 100vh;
         }
         .nav-link {
-            color: #dda0dd; /* Warm violet text color */
+            color: #dda0dd;
             text-decoration: none;
-            font-size: 1.5em;
+            font-size: 2em;
             margin: 0 20px;
             transition: color 0.3s;
         }
         .nav-link:hover {
             color: #ffcc00;
         }
-
-        /* Custom audio player styles */
-        .audio-player {
-            display: none;
-            margin-top: 30px;
-        }
-
-        .audio-controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .audio-controls button {
-            background-color: #ffcc00;
-            color: #333;
-            font-size: 1em;
-            padding: 8px 15px;
-            margin: 0 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .audio-controls button:hover {
-            background-color: #ddd;
-        }
-
-        .audio-source {
-            color: #dda0dd; /* Warm violet text color */
-            margin-top: 10px;
-        }
-
-        /* Message at the bottom of each slide */
-        .refresh-message {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #fcfafa; /* Blanc cassé (almost white) text color */
-        }
-    --></style>
+    </style>
 </head>
 <body>
-    <div class="presentation">
-        <!-- Slide 1: Opening Slide -->
-        <div id="slide1" class="slide">
-            <img class="background-image" src="https://github.com/INDRELE/antimeditationoo1/raw/main/Sequence%2001_1.gif" alt="Image de fond"/>
-            <div class="centered">
-                <h1>ANTI MÉDITATION</h1>
-            </div>
-            <div class="nav-links">
-                <a class="nav-link" href="notesMusique.html">Notes sur la musique</a>
-                <a class="nav-link" href="notesArchitecture.html">Notes sur l'architecture</a>
-                <a class="nav-link" href="notesPeinture.html">Notes sur la peinture</a>
-                <a class="nav-link" href="conclusion.html">Conclusion?</a>
-            </div>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Slide 2: Notes sur la musique -->
-        <div id="notesMusique" class="slide">
-            <!-- Content for "Notes sur la musique" goes here -->
-            <p style="color: #fcfafa;">John Cage's "The Book of Changes".</p>
-            <!-- Background music (John Cage's "The Book of Changes") -->
-            <audio controls loop>
-                <source src="https://cdn.jsdelivr.net/gh/INDRELE/antimeditationoo1/Cage-music-of-changes-4-tudor.ogg.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <div class="nav-links">
-                <a class="nav-link" href="enfersPersonnels.html">Enfers personnels</a>
-                <a class="nav-link" href="punkRock.html">Punk rock contre psychédélisme</a>
-                <a class="nav-link" href="politiserTranse.html">Politiser la transe</a>
-                <a class="nav-link" href="anacoluthe.html">Anacoluthe</a>
-            </div>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Slide 3: Notes sur l'architecture -->
-        <div id="notesArchitecture" class="slide">
-            <!-- Content for "Notes sur l'architecture" goes here -->
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <p>Content goes here. This is an example text for the first row.</p>
-                <p>You can add more paragraphs or content as needed for the second row.</p>
-            </div>
-            <!-- Hyperlinks in the first row -->
-            <div class="nav-links" style="margin-top: 10px;">
-                <a class="nav-link" href="rapportsPouvoirEtArchitecture.html">Rapports de pouvoir et l'architecture</a>
-            </div>
-            <!-- Hyperlinks in the second row -->
-            <div class="nav-links" style="margin-top: 10px;">
-                <a class="nav-link" href="illusionArtefact.html">Illusion d'artefact</a>
-            </div>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Slide 4: Notes sur la peinture -->
-        <div id="notesPeinture" class="slide">
-            <!-- Content for "Notes sur la peinture" goes here -->
-            <p>Content goes here.</p>
-            <!-- Hyperlinks for subpages -->
-            <div id="crisisGeometry" class="nav-links">
-                <a class="nav-link" href="crisisInGeometry.html">Crisis in geometry</a>
-            </div>
-            <div id="peintureIdiotie" class="nav-links">
-                <a class="nav-link" href="peintureEtIdiotie.html">Peinture et idiotie</a>
-            </div>
-            <div id="deChirico" class="nav-links">
-                <a class="nav-link" href="deChirico.html">DeChirico</a>
-            </div>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Subpage 1: Crisis in geometry -->
-        <div id="crisisGeometryContent" class="subpage">
-            <!-- Content for "Crisis in geometry" subpage goes here -->
-            <p>Content goes here.</p>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Subpage 2: Peinture et idiotie -->
-        <div id="peintureIdiotieContent" class="subpage">
-            <!-- Content for "Peinture et idiotie" subpage goes here -->
-            <p>Content goes here.</p>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Subpage 3: DeChirico -->
-        <div id="deChiricoContent" class="subpage">
-            <!-- Content for "DeChirico" subpage goes here -->
-            <p>Content goes here.</p>
-            <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
-        </div>
-
-        <!-- Your existing content for other slides remains unchanged -->
-
+    <div class="nav-links">
+        <a class="nav-link" href="notesMusique.html">Notes sur la musique</a>
+        <a class="nav-link" href="notesArchitecture.html">Notes sur l'architecture</a>
+        <a class="nav-link" href="notesPeinture.html">Notes sur la peinture</a>
+        <a class="nav-link" href="conclusion.html">Conclusion?</a>
     </div>
-
-    <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            showSlide('slide1');
-        });
-
-        function showSlide(slideId) {
-            const slides = document.querySelectorAll('.slide, .subpage');
-            slides.forEach(slide => {
-                slide.style.display = 'none';
-            });
-
-            const selectedSlide = document.getElementById(slideId);
-            if (selectedSlide) {
-                selectedSlide.style.display = 'block';
-                pauseOtherPlayers(selectedSlide);
-            }
-        }
-
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                const targetSlideId = this.getAttribute('href').substring(1);
-                showSlide(targetSlideId);
-            });
-        });
-
-        function pauseOtherPlayers(currentSlide) {
-            const audioPlayers = document.querySelectorAll('.audio-player audio');
-            audioPlayers.forEach(player => {
-                if (player.parentNode.parentNode !== currentSlide) {
-                    player.pause();
-                }
-            });
-        }
-    </script>
 </body>
 </html>
