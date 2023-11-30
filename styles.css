@@ -44,7 +44,7 @@ h1, h2, p {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 10px; /* Adjusted to prevent overlapping with the refresh message */
+    bottom: 40px; /* Increased bottom spacing */
     left: 0;
     right: 0;
 }
@@ -98,7 +98,7 @@ h1, h2, p {
 /* Message at the bottom of each slide */
 .refresh-message {
     position: fixed;
-    bottom: 10px;
+    bottom: 60px; /* Increased bottom spacing */
     left: 50%;
     transform: translateX(-50%);
     color: #fcfafa; /* Blanc cassé (almost white) text color */
