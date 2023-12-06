@@ -47,13 +47,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.refresh-message {
-    position: fixed;
-    bottom: 20px; /* Adjusted bottom value */
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.5); /* Blanc cassé (almost white) with 50% opacity */
-    z-index: 2; /* Adjusted z-index value */
+
 }
 
 h1, h2, p {
