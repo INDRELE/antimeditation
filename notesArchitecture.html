@@ -7,8 +7,41 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <title>Notes sur l'architecture</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Hide scroll bars */
+        }
+
+        .presentation {
+            position: relative;
+            z-index: 1;
+        }
+
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #video-background {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
+    <!-- Video Background -->
+    <div id="video-container">
+        <div style="padding:75% 0 0 0;position:relative;">
+            <iframe id="video-background" src="https://player.vimeo.com/video/892280813?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="espece de drogué"></iframe>
+        </div>
+    </div>
+
+    <!-- Content -->
     <div class="presentation">
         <!-- Slide 3: Notes sur l'architecture -->
         <div id="notesArchitecture" class="slide">
@@ -20,6 +53,13 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        // You can use Vimeo Player API for additional customization if needed
+        var iframe = document.getElementById('video-background');
+        var player = new Vimeo.Player(iframe);
+
+        // Additional customization options can be added here
+    </script>
 </body>
 </html>
