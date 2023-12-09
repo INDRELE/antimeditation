@@ -2,19 +2,59 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Peintre idiot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'TwoThousandTwentyTwo', sans-serif;
+        }
+
+        .presentation {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide, .subpage {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .refresh-message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            z-index: 2;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1, h2, p {
+            color: #dda0dd;
+        }
+    </style>
 </head>
 <body>
     <div class="presentation">
         <!-- Subpage: Peinture et Idiotie -->
-        <div id="peintureEtIdiotie" class="slide background-image" style="background-image: url('https://cdn.gerhard-richter.com/images/xxlarge/7735.jpg');">
-            <!-- Add content for "Peinture et Idiotie" -->
-            <h2>Peinture et Idiotie</h2>
-            <p>
-                Peintre idiot
-
-L'idée de la stupidité associée à la peinture, ainsi que la notion de l'art rétinien, est une réflexion intéressante qui se situe à l'intersection de la philosophie, de l'art et de la perception. Examinons plus en détail les points de vue de Schopenhauer et Marcel Duchamp, ainsi que leur pertinence pour la compréhension de l'art.
+        <div id="peintureEtIdiotie" class="slide">
+            <!-- Content for "Peinture et Idiotie" -->
+            <h1>Peintre idiot</h1>
+            <!-- Add additional content as needed -->
+            <p>L'idée de la stupidité associée à la peinture, ainsi que la notion de l'art rétinien, est une réflexion intéressante qui se situe à l'intersection de la philosophie, de l'art et de la perception. Examinons plus en détail les points de vue de Schopenhauer et Marcel Duchamp, ainsi que leur pertinence pour la compréhension de l'art.
 
 Schopenhauer et l'idiotie de la perception :
 Arthur Schopenhauer, le célèbre philosophe allemand, a fait des contributions significatives à la philosophie de l'art et à la philosophie de la perception. Dans son travail, il a abordé l'idée que la perception visuelle est intrinsèquement idiote ou stupide, car elle ne peut saisir que les apparences superficielles des objets sans comprendre leurs causes profondes. Il a critiqué la peinture, en particulier la peinture réaliste, en soutenant que l'artiste se contente de représenter des apparences superficielles sans saisir la véritable nature des choses.
@@ -30,9 +70,7 @@ Les idées de Schopenhauer et de Duchamp, bien que provenant de contextes diffé
 L'art contemporain a souvent embrassé ces critiques en élargissant le champ de l'art au-delà de la représentation visuelle. Il englobe désormais des formes d'art conceptuel, de l'art abstrait, de l'art interactif et d'autres formes d'expression artistique qui transcendent la simple perception visuelle. Ces mouvements artistiques ont élargi la notion de ce qui peut être considéré comme de l'art, offrant une réflexion plus complexe sur la perception et la signification.
 
 En fin de compte, la question de la perception visuelle et de l'art rétinien demeure un sujet de débat et d'exploration dans le monde de l'art contemporain, offrant de nouvelles perspectives sur la manière dont nous interagissons avec l'art et la réalité.
-
-                <!-- ... -->
-            </p>
+</p>
             <p class="refresh-message">Rafraîchir la page pour revenir à la page d'accueil</p>
         </div>
     </div>
