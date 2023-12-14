@@ -4,6 +4,138 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css" media="screen">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'TwoThousandTwentyTwo', sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: gifLoop 10s infinite;
+        }
+
+        @font-face {
+            font-family: 'TwoThousandTwentyTwo';
+            src: url('https://github.com/INDRELE/antimeditation/blob/main/twothousandtwentytwo.otf');
+        }
+
+        @keyframes gifLoop {
+            to {
+                background-position: 100% 0;
+            }
+        }
+
+        .presentation {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide, .subpage {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: gifLoop 10s infinite;
+        }
+
+        .refresh-message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            z-index: 2;
+        }
+
+        h2, p {
+            color: #ffffff; /* White text color for better visibility */
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1, h2, p {
+            color: #dda0dd;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .nav-link {
+            color: #dda0dd;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 20px;
+            transition: color 0.3s;
+            position: relative;
+            z-index: 3;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00;
+        }
+
+        .audio-player {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .audio-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .audio-controls button {
+            background-color: #ffcc00;
+            color: #333;
+            font-size: 1em;
+            padding: 8px 15px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .audio-controls button:hover {
+            background-color: #ddd;
+        }
+
+        .audio-source {
+            color: #dda0dd;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="presentation">
@@ -15,9 +147,9 @@
             <div class="two-columns">
                 <!-- French Version -->
                 <div class="column">
-                    <p>Le texte souligne comment la géométrie a été utilisée pour normaliser et surveiller la société industrielle...</p>
+                    <p>Le texte souligne comment la géométrie a été utilisée pour normaliser et surveiller la société industrielle, en particulier dans des endroits comme les prisons, les hôpitaux et les usines. La géométrie est présentée comme un outil de contrôle et de surveillance, un moyen de canaliser, mesurer et normaliser les mouvements et les comportements des individus.</p>
                     
-                    <p>En fin de compte, le texte révèle comment l'art géométrique contemporain devient un espace de réflexion sur les rapports de pouvoir dans notre société...</p>
+                    <p>En fin de compte, le texte révèle comment l'art géométrique contemporain devient un espace de réflexion sur les rapports de pouvoir dans notre société. La géométrie est utilisée pour questionner et déconstruire les mécanismes de contrôle, tout en révélant la complexité des signes géométriques dans notre culture. Cette réflexion sur la géométrie et le pouvoir constitue un élément essentiel de l'art contemporain, offrant un regard critique sur notre monde complexe et hautement structuré.</p>
                 </div>
             </div>
 
