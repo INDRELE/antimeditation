@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis In Geometry</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Temporary inline styles for debugging */
+        /* Inline Styles for Specific Elements */
         .presentation {
             padding: 20px;
         }
@@ -14,17 +15,25 @@
         }
         .two-columns {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
         .column {
             flex: 1;
             padding: 10px;
             border: 1px solid #000;
-            background-color: #f9f9f9;
+            background-color: #f9f9f9; /* Light background to ensure text visibility */
+            min-width: 300px;
+            color: #000; /* Ensure text is black and visible */
         }
         .refresh-message {
             margin-top: 20px;
             font-weight: bold;
             color: #ff0000;
+            text-align: center;
+        }
+        h2, p {
+            color: #000; /* Set text color to black for visibility */
         }
     </style>
 </head>
@@ -32,7 +41,7 @@
     <div class="presentation">
         <!-- Subpage: Crisis In Geometry -->
         <div id="crisisInGeometry" class="slide">
-            <!-- Add content for "Crisis In Geometry" -->
+            <!-- Content for "Crisis In Geometry" -->
             <h2>Crisis In Geometry</h2>
 
             <div class="two-columns">
@@ -48,6 +57,6 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
